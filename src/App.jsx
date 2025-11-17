@@ -4,13 +4,17 @@ import Programs from './components/Programs'
 import WhyUs from './components/WhyUs'
 import Testimonials from './components/Testimonials'
 import CTA from './components/CTA'
+import BackgroundFX from './components/BackgroundFX'
+import HoloMarquee from './components/HoloMarquee'
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white relative">
+      <BackgroundFX />
       <Navbar />
       <main>
         <Hero />
+        <HoloMarquee />
         <Programs />
         <WhyUs />
         <Testimonials />
